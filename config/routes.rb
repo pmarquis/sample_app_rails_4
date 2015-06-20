@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "chart/index"
+  get "chart/get_data"
   resources :users do
     member do
       get :following, :followers

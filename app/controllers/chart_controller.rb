@@ -1,5 +1,11 @@
 class ChartController < ApplicationController
-  def index
+
+  def index ( number="" )
+    if number == 1
+      render 'chart1'
+    end
+    # @graph_name = "graph" + number
+    render 'index'
   end
 
   def get_data

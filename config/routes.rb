@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
   
+  get "turfjs/index"
   get "chart(/:number)" => "chart#index"
   get "chart_data" => "chart#get_data"
 
